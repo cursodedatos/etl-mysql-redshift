@@ -8,10 +8,10 @@ import time
 def lambda_handler(event, context):
 
     # Extract
-    connection = pymysql.connect(host='cursoudla.cxcuailuhghk.us-east-1.rds.amazonaws.com',
+    connection = pymysql.connect(host='xxx.xxx.us-east-1.rds.amazonaws.com',
                                  user='admin',
-                                 password='uBSM8pfZuBgpSZcxZvJe',
-                                 database='banktest')
+                                 password='pass',
+                                 database='database')
     
     cur = connection.cursor(pymysql.cursors.SSCursor)  
     #cur = db.cursor(pymysql.cursors.DictCursor)
